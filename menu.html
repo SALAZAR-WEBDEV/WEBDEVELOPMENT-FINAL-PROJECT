@@ -2,56 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>OCU Coffee Shop | Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Holy Grounds</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
         <div class="container">
-            <a class="navbar-brand" href="index.html">OCU COFFEE SHOP</a>
-            <div class="navbar-nav">
+            <a class="navbar-brand brand-font" href="index.html">HOLY GROUNDS</a>
+            <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link active" href="menu.html">Menu</a>
-                <a class="nav-link" href="info.html">Store Info</a>
+                <a class="nav-link" href="info.html">Info</a>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Our Coffee Menu</h2>
-        <div class="row g-4">
+    <main class="container mt-5 mb-5">
+        <h1 class="text-center brand-font mb-5">Our Selection</h1>
+
+        <h2 class="section-title text-success mb-4 border-bottom pb-2">March Specials</h2>
+        <div class="row g-4 mb-5">
             <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Latte">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Classic Latte</h5>
-                        <p class="card-text">Rich espresso with creamy steamed milk.</p>
-                        <span class="badge bg-success">$3.50</span>
+                <div class="card h-100 shadow-sm border-success overflow-hidden text-center">
+                    <img src="images/lucky.jpg" class="card-img-top-full" alt="Lucky Charm Frappe">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Lucky Charm Frappe</h5>
+                        <p class="small text-muted">white mocha + toasted marshmallow + vanilla</p>
+                        <p class="fs-5 text-success fw-bold">$5.00</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Cappuccino">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Cappuccino</h5>
-                        <p class="card-text">Espresso topped with a deep layer of foam.</p>
-                        <span class="badge bg-success">$3.50</span>
+                <div class="card h-100 shadow-sm border-success overflow-hidden text-center">
+                    <img src="images/bloom.jpg" class="card-img-top-full" alt="Spring Bloom Honey Latte">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Spring Bloom Honey Latte</h5>
+                        <p class="small text-muted">honey + lavender + vanilla</p>
+                        <p class="fs-5 text-success fw-bold">$4.50</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Cold Brew">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Cold Brew</h5>
-                        <p class="card-text">Smooth, low-acid coffee steeped for 12 hours.</p>
-                        <span class="badge bg-success">$4.00</span>
+                <div class="card h-100 shadow-sm border-success overflow-hidden text-center">
+                    <img src="images/coconut.jpg" class="card-img-top-full" alt="Coconut Cream Dream">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Coconut Cream Dream</h5>
+                        <p class="small text-muted">coconut + vanilla + white mocha</p>
+                        <p class="fs-5 text-success fw-bold">$4.50</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <h3 class="border-bottom pb-2 mb-4">Coffee Selection</h3>
+        <div class="table-responsive mb-5 shadow-sm rounded">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-dark">
+                    <tr><th>Coffee</th><th class="text-center">S</th><th class="text-center">M</th><th class="text-center">L</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Brewed Coffee</td><td class="text-center">$2.00</td><td class="text-center">$2.50</td><td class="text-center">$3.00</td></tr>
+                    <tr><td>Americano</td><td class="text-center">$3.00</td><td class="text-center">$3.50</td><td class="text-center">$4.00</td></tr>
+                    <tr><td>Latte</td><td class="text-center">$4.50</td><td class="text-center">$5.00</td><td class="text-center">$5.50</td></tr>
+                    <tr><td>Cappuccino</td><td class="text-center">$4.00</td><td class="text-center">$4.50</td><td class="text-center">$5.00</td></tr>
+                    <tr><td>Macchiato</td><td class="text-center">$4.50</td><td class="text-center">$5.00</td><td class="text-center">$5.50</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 class="border-bottom pb-2 mt-5 mb-4">Tea Selection</h3>
+        <div class="table-responsive shadow-sm rounded">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-dark">
+                    <tr><th>Tea</th><th class="text-center">S</th><th class="text-center">M</th><th class="text-center">L</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Matcha</td><td class="text-center">$4.00</td><td class="text-center">$4.50</td><td class="text-center">$5.00</td></tr>
+                    <tr><td>Chai</td><td class="text-center">$4.00</td><td class="text-center">$4.50</td><td class="text-center">$5.00</td></tr>
+                    <tr><td>Tea Latte</td><td class="text-center">$3.50</td><td class="text-center">$4.00</td><td class="text-center">$4.50</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2026 Holy Grounds | Campus Project</p>
+    </footer>
 </body>
 </html>

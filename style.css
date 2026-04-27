@@ -1,19 +1,102 @@
-/* Custom Styles for OCU Coffee Shop */
+/* Core branding colors */
+:root {
+    --holy-green: #1b4332;
+    --coffee-accent: #d4a373;
+}
+
 body {
-    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
     color: #333;
 }
 
-.navbar-brand {
+.brand-font {
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
-.card {
-    border: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+/* Hero section styling */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1500') center/cover;
+    height: 60vh;
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
+/* Card hover effects for better UX */
+.card {
+    transition: transform 0.2s;
+    border-radius: 15px;
 }
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.table-warning {
+    background-color: #fff3cd !important;
+}
+:root {
+    --holy-green: #1b4332;
+}
+
+body { font-family: 'Poppins', sans-serif; }
+.brand-font { font-family: 'Playfair Display', serif; }
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1500') center/cover;
+    height: 50vh;
+}
+
+/* Fix for menu images */
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    background-color: #f8f9fa;
+}
+
+.card { transition: transform 0.2s; border-radius: 12px; }
+.card:hover { transform: translateY(-5px); }
+:root {
+    --holy-green: #1b4332;
+}
+
+body { font-family: 'Poppins', sans-serif; }
+.brand-font { font-family: 'Playfair Display', serif; }
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1500') center/cover;
+    height: 55vh;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card { transition: all 0.3s ease; border-radius: 12px; }
+.card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+:root {
+    --holy-green: #1b4332;
+}
+
+body { font-family: 'Poppins', sans-serif; }
+.brand-font { font-family: 'Playfair Display', serif; }
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1500') center/cover;
+    height: 55vh;
+}
+
+/* FIX: Ensure full photo is displayed without cropping */
+.card-img-top-full {
+    height: 350px;
+    width: 100%;
+    object-fit: contain;
+    background-color: #f8f9fa; /* Fills empty space with a clean light grey */
+    padding: 10px;
+}
+
+.card { transition: all 0.3s ease; border-radius: 12px; }
+.card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }

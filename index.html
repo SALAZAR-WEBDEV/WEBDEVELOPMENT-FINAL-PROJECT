@@ -3,44 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OCU Coffee Shop | Home</title>
+    <title>Holy Grounds | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
         <div class="container">
-            <a class="navbar-brand" href="index.html">OCU COFFEE SHOP</a>
-            <div class="navbar-nav">
-                <a class="nav-link active" href="index.html">Home</a>
-                <a class="nav-link" href="menu.html">Menu</a>
-                <a class="nav-link" href="info.html">Store Info</a>
+            <a class="navbar-brand brand-font" href="index.html">HOLY GROUNDS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <header class="text-center mb-5">
-            <h1>Welcome to OCU Coffee Shop</h1>
-            <p class="lead">Serving the best campus coffee since 2026.</p>
-        </header>
-
-        <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-                <h3>Daily Special</h3>
-                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=500" alt="Coffee Special" class="img-fluid rounded shadow">
-                <p class="mt-3 fst-italic">"Freshly roasted beans every morning."</p>
-
-                <button id="btnSurprise" class="btn btn-warning mt-3">Click for a Coffee Surprise!</button>
-                <div id="apiResult" class="mt-4"></div>
-            </div>
+    <header class="hero-section text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-2 brand-font">Holy Grounds</h1>
+            <p class="lead">Premium coffee at the heart of Oakland City University.</p>
+            <a href="menu.html" class="btn btn-success btn-lg mt-3 shadow">View Full Menu</a>
         </div>
-    </div>
+    </header>
 
-    <footer class="text-center py-4 bg-light mt-5">
-        <p>&copy; 2026 OCU Coffee Shop | MVP Development</p>
+    <section class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="brand-font mb-3">Study Break?</h2>
+            <p class="mb-4">Click below to generate a random coffee vibe using our live API!</p>
+            <button id="btnSurprise" class="btn btn-outline-dark btn-lg shadow-sm">Get a Coffee Surprise</button>
+            <div id="apiResult" class="mt-4"></div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2026 Holy Grounds | 700 W Sherman St, Oakland City, IN</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
